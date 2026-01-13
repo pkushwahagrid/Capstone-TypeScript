@@ -9,8 +9,7 @@
     <script src="dist/app.js" defer></script>
   </head>
   <body>
-    <h1>Capstone Project</h1>
-    <div id="project-input">
+    <template id="project-input">
       <form>
         <div class="form-control">
           <label for="title">Title</label>
@@ -26,25 +25,22 @@
         </div>
         <button type="submit">ADD PROJECT</button>
       </form>
-    </div>
-    <div id="single-project">
-      <h2>Title</h2>
-      <h3>Description</h3>
-      <p>People</p>
-    </div>
-    <div id="project-list">
+    </template>
+    <template id="single-project">
+      <li draggable="true">
+        <h2></h2>
+        <h3></h3>
+        <p></p>
+      </li>
+    </template>
+    <template id="project-list">
       <section class="projects">
         <header>
-          <h2>Active Projects</h2>
+          <h2></h2>
         </header>
         <ul></ul>
       </section>
-      <section class="projects">
-        <header>
-          <h2>Finished Projects</h2>
-        </header>
-        <ul></ul>
-      </section>
-    </div>
+    </template>
+    <div id="app"></div>
   </body>
 </html>
