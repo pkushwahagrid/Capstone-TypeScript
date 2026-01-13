@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>ProjectManager</title>
+    <title>Capstone Project</title>
     <link rel="stylesheet" href="app.css" />
     <script src="dist/app.js" defer></script>
   </head>
   <body>
-    <template id="project-input">
+    <h1>Capstone Project</h1>
+    <div id="project-input">
       <form>
         <div class="form-control">
           <label for="title">Title</label>
@@ -25,22 +26,25 @@
         </div>
         <button type="submit">ADD PROJECT</button>
       </form>
-    </template>
-    <template id="single-project">
-      <li draggable="true">
-        <h2></h2>
-        <h3></h3>
-        <p></p>
-      </li>
-    </template>
-    <template id="project-list">
+    </div>
+    <div id="single-project">
+      <h2>Title</h2>
+      <h3>Description</h3>
+      <p>People</p>
+    </div>
+    <div id="project-list">
       <section class="projects">
         <header>
-          <h2></h2>
+          <h2>Active Projects</h2>
         </header>
         <ul></ul>
       </section>
-    </template>
-    <div id="app"></div>
+      <section class="projects">
+        <header>
+          <h2>Finished Projects</h2>
+        </header>
+        <ul></ul>
+      </section>
+    </div>
   </body>
 </html>
